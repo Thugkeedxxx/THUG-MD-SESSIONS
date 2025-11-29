@@ -1,0 +1,14 @@
+# render.yaml for Thugkeed sessions
+services:
+  - type: static
+    name: thug-md-sessions
+    env: static
+    branch: main
+    buildCommand: "" # No build needed for pure HTML/CSS/JS
+    publishPath: "/" # Root folder contains index.html
+    plan: free
+    autoDeploy: true
+    routes:
+      - type: static
+        path: /
+        cache: 3600
