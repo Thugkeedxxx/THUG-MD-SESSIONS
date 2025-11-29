@@ -85,14 +85,14 @@ async function Horlapookie_PAIR_CODE() {
 ★彡[ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ sᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ!]彡★
 `;
 
-await Pair_Code_By_THUG-MD.sendMessage(Pair_Code_By_THUG-MD.user.id, { text: Star_MD_TEXT }, { quoted: session });  
+await Pair_Code_By_Horlapookie.sendMessage(Pair_Code_By_Horlapookie.user.id, { text: Star_MD_TEXT }, { quoted: session });  
 
                 await delay(100);  
-                await Pair_Code_By_THUG-MD.ws.close();  
+                await Pair_Code_By_Horlapookie.ws.close();  
                 return await removeFile('./temp/' + id);  
             } else if (connection === 'close' && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {  
                 await delay(10000);  
-                THUG-MD _PAIR_CODE();  
+                Horlapookie_PAIR_CODE();  
             }  
         });  
     } catch (err) {  
@@ -104,7 +104,7 @@ await Pair_Code_By_THUG-MD.sendMessage(Pair_Code_By_THUG-MD.user.id, { text: Sta
     }  
 }  
   
-return await THUG-MD _PAIR_CODE();
+return await Horlapookie_PAIR_CODE();
 
 });
 
